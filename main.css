@@ -2,19 +2,14 @@
     padding: 0;
     margin: 0;
     border: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #130f0e;
 }
 
-body {
+html {
     background-color: #3498db;
-}
-
-.header h1,
-h2,
-.content p,
-.title p {
     text-align: center;
-    font-family: sans-serif;
-    color: #120f0e;
 }
 
 .content p {
@@ -22,53 +17,121 @@ h2,
     padding: 2em;
 }
 
-.header h1 {
-    padding: 2em 2em 0 2em;
+nav {
+    background-color: rgba(19, 15, 14, 0.8);
+}
+
+nav a,
+nav span {
+    color: #ecf0f1;
+    display: inline-block;
+    padding: 6px;
+    font-weight: 400
+}
+
+nav span {
     font-weight: 800;
 }
 
-.header h2 {
-    padding 0 2em 2em 2em;
+.current {
+    text-decoration: underline;
+}
+
+.contactitem {
+    width: 300px;
+    margin: 7px auto;
+    display: block;
+}
+
+textarea {
+    width: 300px;
+    height: 200px;
+    padding: 4px;
+}
+
+.push:active {
+    -webkit-transform: scale(0.93);
+    -ms-transform: scale(0.93);
+    -o-transform: scale(0.93);
+    transform: scale(0.93);
+}
+
+#messagetitle {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.itemname {
+    float: left;
+    font-weight: 500;
+}
+
+.button {
+    background-color: transparent;
+    margin-top: 30px;
+    font-size: 1.8em;
     font-weight: 400;
+    cursor: pointer;
 }
 
-.navbar {
-    background-color: #130f0e;
-}
-
-.nabar ul {
-    list-style: none;
-}
-
-.navbar li {
-    display: inline-block;
-    padding: .5em;
-}
-
-a:link {
-    color: #ecf0f1;
-    font-family: sans-serif;
-}
-
-a:visited {
+.button:hover {
     color: #ecf0f1;
 }
 
-a:hover {
-    color: #3498db;
+.contactitem input {
+    float: right;
+    height: 1.7em;
+    padding: 0 3px;
 }
 
-a:active {
-    color: #9b59b6;
+.pagetitle {
+    margin: 40px auto;
+}
+
+.heading {
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.description {
+    font-size: 1.5em;
+}
+
+.title {
+    margin: 80px 0 20px;
+    font-weight: 300;
+    font-size: 10vw;
+}
+
+.subtitle {
+    margin-bottom: 60px;
+    font-weight: 400
+}
+
+.animate-inside * {
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.animate {
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 a {
+    color: #ecf0f1;
     text-decoration: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
-form {
-    padding: 2em;
-    font-family: sans-serif;
-    line-height: 1.5em;
-    color: #130f0e;
+a:hover,
+a:active {
+    color: #3498db;
 }
